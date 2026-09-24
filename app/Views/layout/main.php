@@ -38,17 +38,31 @@
 <body class="font-sans antialiased flex flex-col min-h-screen">
     
     <!-- Navbar -->
-    <header class="bg-brand-teal text-white sticky top-0 z-50 shadow-md">
+    <header class="bg-brand-dark/95 backdrop-blur-md border-b border-white/10 text-white sticky top-0 z-50 shadow-xl transition-all duration-300">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
             <!-- Logo -->
-            <a href="/" class="text-2xl font-bold tracking-tight text-brand-orange hover:text-white transition-colors duration-300">
-                Fed's Bika Ambon
+            <a href="/" class="group flex items-center gap-3 text-2xl font-black tracking-tighter text-brand-orange hover:text-white transition-all duration-500">
+                <img src="/uploads/logo.jpg" alt="Fed's Bika Ambon Logo" class="h-14 w-14 md:h-16 md:w-16 rounded-full border-2 border-brand-orange/50 shadow-lg group-hover:scale-110 group-hover:border-brand-orange transition-all duration-500 bg-white object-cover">
+                <div class="flex flex-col">
+                    <span class="bg-gradient-to-r from-brand-orange to-yellow-400 text-transparent bg-clip-text group-hover:from-white group-hover:to-gray-300 transition-all duration-500 leading-none">
+                        Fed's
+                    </span>
+                    <span class="text-white font-light tracking-widest text-xs group-hover:text-brand-orange transition-colors duration-500 mt-1">
+                        BIKA AMBON
+                    </span>
+                </div>
             </a>
             
             <!-- Navigation -->
-            <nav class="hidden md:flex space-x-8">
-                <a href="/" class="font-medium hover:text-brand-orange transition-colors">Menu</a>
-                <a href="#about" class="font-medium hover:text-brand-orange transition-colors">Tentang Kami</a>
+            <nav class="hidden md:flex items-center space-x-10">
+                <a href="/" class="relative font-bold text-sm tracking-widest uppercase text-white hover:text-brand-orange transition-colors group py-2">
+                    Menu
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-brand-orange transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#about" class="relative font-bold text-sm tracking-widest uppercase text-white hover:text-brand-orange transition-colors group py-2">
+                    Tentang Kami
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-brand-orange transition-all duration-300 group-hover:w-full"></span>
+                </a>
             </nav>
 
             <!-- Login & Contact Us -->
@@ -64,9 +78,9 @@
                 </div>
                 
                 <!-- Contact Us Block (KFC Style) -->
-                <div class="hidden sm:flex flex-col items-center bg-orange-50 rounded-xl overflow-hidden shadow-sm border border-orange-100">
-                    <span class="text-[11px] font-extrabold text-brand-teal uppercase px-4 py-1 tracking-wider">Contact Us</span>
-                    <a href="tel:081388321263" class="bg-brand-teal text-white flex items-center gap-2 px-4 py-1.5 w-full justify-center hover:bg-teal-700 transition-colors">
+                <div class="hidden sm:flex flex-col items-center bg-white/5 rounded-xl overflow-hidden shadow-sm border border-white/10 backdrop-blur-sm hover:bg-white/10 transition-colors">
+                    <span class="text-[11px] font-extrabold text-brand-orange uppercase px-4 py-1 tracking-wider">Contact Us</span>
+                    <a href="tel:081388321263" class="bg-brand-teal text-white flex items-center gap-2 px-4 py-1.5 w-full justify-center hover:bg-teal-600 transition-colors">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
                             <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                         </svg>
